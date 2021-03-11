@@ -1,0 +1,47 @@
+.Header{
+    width: 100%;
+    background: linear-gradient(rgb(230, 79, 79),70%,white);
+    padding-bottom: 2%;
+}
+ul {
+    list-style: none;
+}
+.headList {
+    overflow: auto;
+}
+.headList .logo{
+    margin: 1%;
+    margin-top: 2%;
+    float: left;
+}
+.headList .logo img{
+    width: 90%
+}
+.headList .profile{
+    margin: 1%;
+    text-align: right;
+}
+.headList .profile .nameSpace{
+    margin-right: 2%;
+}
+.profile img:hover{
+    cursor: pointer;
+}
+.nameSpace:hover{
+    cursor: pointer;
+}
+.nameSpace{
+    font-weight: bold;
+}
+.nameSpace a:link {
+     color: black; 
+     text-decoration: none;
+}
+.nameSpace a:visited {
+     color: black; 
+     text-decoration: none;
+}
+.nameSpace a:hover { 
+    color: black; 
+    text-decoration: none;
+}
