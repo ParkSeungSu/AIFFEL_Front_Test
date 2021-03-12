@@ -50,3 +50,24 @@ button:hover{
     font-weight: bold;
     text-align: left;
 }
+.forumList{
+    text-align: center;
+}
+.forumList p{
+    font-size: 20px;
+    font-weight: bold;
+}
+.pagi{
+    text-align: center;
+    padding-left: 40%;
+}
+.CreateForum{
+    text-align: left;
+}
+.CreateForum button{
+    border-radius: 5px;
+    border:1px solid gray;
+    background-color: rgba(0, 0, 0, 0);
+    color:gray;
+    padding: 5px;
+}

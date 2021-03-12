@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Header from './component/Header';
 import Nav from './component/Nav';
@@ -6,8 +6,11 @@ import Footer from './component/Footer';
 import './App.css';
 import Profile from './component/Profile';
 import ForumPages from './pages/ForumPages';
+import ForumView from './pages/ForumView';
 
 function App() {
+  const [froumData, setFroumData] = useState({});
+
   return (
     <BrowserRouter>
       <div className="App">
@@ -23,10 +26,17 @@ function App() {
             <Profile></Profile>
             <Footer></Footer>
           </Route>
-          <Route path="/forum">
+          <Route path="/forum/:id">
             <Header></Header>
             <Nav></Nav>
-            <ForumPages></ForumPages>
+            <ForumView data={froumData}></ForumView>
+            <Footer></Footer>
+          </Route>
+          <Route path="/forum">
+            {console.log(froumData)}
+            <Header></Header>
+            <Nav></Nav>
+            <ForumPages setFroumData={setFroumData}></ForumPages>
             <Footer></Footer>
           </Route>
         </Switch>

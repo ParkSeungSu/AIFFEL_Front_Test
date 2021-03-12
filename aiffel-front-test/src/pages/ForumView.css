@@ -1,0 +1,63 @@
+.ForumViewTitle{
+    margin-top: 5%;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+.ContentArea{
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+    padding:3%;
+    border: 5px solid;
+    border-radius: 5px;
+    border-color: black;
+}
+.ContentArea .TextArea{
+    border-style: solid; 
+    border-width: 0 0 0 8px; 
+    padding: 12px; 
+    word-break: break-all;
+    border-color: LightGray; 
+    background-color:rgba(211, 211, 211, 0.2);
+
+   
+}
+
+.LikeButton .Like{
+    padding-top: 10px;
+    margin: 0 auto;
+    align-items: center;
+    margin-top: 10px;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(102, 102, 255);
+    border-radius: 10px;
+}
+.LikeButton .Unlike{
+    padding-top: 10px;
+    margin: 0 auto;
+    align-items: center;
+    margin-top: 10px;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(155, 155, 155);
+    border-radius: 10px;
+}
+.ForumTag{
+    text-align: right;
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 55px;
+}
+.EraseBT{
+    align-content: center;
+    text-align: center;
+}
+.EraseBT button{
+    border-radius: 5px;
+    border:1px solid gray;
+    background-color: rgba(0, 0, 0, 0);
+    color:gray;
+    padding: 5px;
+}

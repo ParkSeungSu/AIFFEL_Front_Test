@@ -1,6 +1,6 @@
 .Header{
     width: 100%;
-    background: linear-gradient(rgb(230, 79, 79),70%,white);
+    background: linear-gradient(white,70%,#333333);
     padding-bottom: 2%;
 }
 ul {

@@ -13,7 +13,7 @@ function Pagination(props) {
     const pages = _.range(1, pageCount + 1);
 
     return (
-        <>
+        <div className="pagi">
             <nav>
                 <ul className="pagination">
                     {pages.map(page => (
@@ -26,7 +26,7 @@ function Pagination(props) {
                     ))}
                 </ul>
             </nav>
-        </>
+        </div>
     );
 }
 
