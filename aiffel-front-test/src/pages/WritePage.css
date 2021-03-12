@@ -1,0 +1,30 @@
+.WritePage {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    align-content: center;
+    text-align: center;
+    padding: 10px;
+     background: linear-gradient(#333333,70%,white);
+}
+.Box {
+    align-content: center;
+    margin-left: 0%;
+    margin-right: 0%;
+}
+.Box label{
+    margin:5px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.WriteTitle {
+    text-align:center;
+}
+.submitBT button{
+    font-size: 30px;
+      border-radius: 5px;
+    border:1px solid gray;
+    background-color: rgba(0, 0, 0, 0);
+    color:gray;
+    padding: 5px;
+}

@@ -38,7 +38,7 @@ function ForumPages(prop) {
     console.log(pagedForums);
 
     function create() {
-        <Link to="/create"></Link>
+        window.location.href = "/create"
     }
 
     if (count === 0)

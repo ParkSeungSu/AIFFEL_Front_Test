@@ -7,6 +7,8 @@ import './App.css';
 import Profile from './component/Profile';
 import ForumPages from './pages/ForumPages';
 import ForumView from './pages/ForumView';
+import WritePage from './pages/WritePage';
+
 
 function App() {
   const [froumData, setFroumData] = useState({});
@@ -24,6 +26,12 @@ function App() {
             <Header></Header>
             <Nav></Nav>
             <Profile></Profile>
+            <Footer></Footer>
+          </Route>
+          <Route path="/create">
+            <Header></Header>
+            <Nav></Nav>
+            <WritePage></WritePage>
             <Footer></Footer>
           </Route>
           <Route path="/forum/:id">

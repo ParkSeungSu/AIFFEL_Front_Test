@@ -12,7 +12,7 @@ function Nav() {
         <div className="Navbar">
             <div className="leftSide">
                 <div className="links" id={showLinks ? "hidden" : ""}>
-                    <a href="#">😀Home</a>
+                    <a href="/">😀Home</a>
                     <a href="">😃About Us</a>
                     <a href="/users">🤗Users</a>
                     <a href="/forum">📑Forum</a>
