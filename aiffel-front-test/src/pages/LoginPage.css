@@ -1,0 +1,33 @@
+.LoginPage{
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    align-content: center;
+    text-align: center;
+    padding-top: 30px;
+     background: linear-gradient(#333333,70%,white);
+}
+.Card{
+    text-align: center;
+    margin-top: 10%;
+}
+.Email{
+    margin:10px;
+}
+.Password{
+    margin:10px;
+}
+.Email label{
+    margin:10px;
+}
+.Password label{
+    margin:10px;
+}
+.Card button{
+    font-size: 30px;
+      border-radius: 5px;
+    border:1px solid gray;
+    background-color: rgba(0, 0, 0, 0);
+    color:gray;
+    padding: 5px;
+}

@@ -8,7 +8,7 @@ import Profile from './component/Profile';
 import ForumPages from './pages/ForumPages';
 import ForumView from './pages/ForumView';
 import WritePage from './pages/WritePage';
-
+import LoginPage from './pages/LoginPage';
 
 function App() {
   const [froumData, setFroumData] = useState({});
@@ -18,8 +18,7 @@ function App() {
       <div className="App">
         <Switch>
           <Route exact path="/">
-            <Header></Header>
-            <Nav></Nav>
+            <LoginPage></LoginPage>
             <Footer></Footer>
           </Route>
           <Route path="/profile">
