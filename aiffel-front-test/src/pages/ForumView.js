@@ -5,7 +5,7 @@ function ForumView(prop) {
     const forumdatas = prop.data;
     const { id } = useParams();
     console.log(id);
-
+    const index = id - 1;
     const dummy = Array.from(forumdatas);
     console.log(dummy);
 
@@ -20,7 +20,7 @@ function ForumView(prop) {
 
     function toggleIsLiked() {
 
-        fetch(`http://localhost:5000/forum/${data[0].id}`, {
+        fetch(`http://localhost:5000/forum/${data[index].id}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json',
@@ -37,7 +37,7 @@ function ForumView(prop) {
     }
     function del() {
         if (window.confirm('삭제하시겠어요?')) {
-            fetch(`http://localhost:5000/forum/${data[0].id}`, {
+            fetch(`http://localhost:5000/forum/${data[index].id}`, {
                 method: 'DELETE',
             }).then(res => {
                 if (res.ok) {
@@ -49,10 +49,10 @@ function ForumView(prop) {
 
     return (
         <>
-            <div className="ForumViewTitle"><p>{data[0].title}</p></div>
+            <div className="ForumViewTitle"><p>{data[index].title}</p></div>
             <div className="ContentArea">
                 <div className="TextArea">
-                    {data[0].content}
+                    {data[index].content}
                 </div>
                 <div className="LikeButton">
                     <div className={isLiked ? "Like" : "Unlike"}>
@@ -60,7 +60,7 @@ function ForumView(prop) {
                     </div>
                 </div>
             </div>
-            <div className="ForumTag" style={{ color: data[0].tag.color }}>{data[0].tag.name}</div>
+            <div className="ForumTag" style={{ color: data[index].tag.color }}>{data[index].tag.name}</div>
             <div className="EraseBT">
                 <button onClick={del}>🗑</button>
             </div>
