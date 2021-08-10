@@ -8,7 +8,7 @@ function Header() {
     return (
         <div className="Header">
             <ul className="headList">
-                <li className="logo"><a href="/"><img src={logo} alt="logo" /></a></li>
+                <li className="logo"><a href="/forum"><img src={logo} alt="logo" /></a></li>
                 <li className="profile">
                     <ul>
                         <li><a href="/profile"><img src={profile} alt="profile" width="10%" height="10%" /></a></li>
